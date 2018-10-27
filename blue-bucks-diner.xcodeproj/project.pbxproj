@@ -14,6 +14,7 @@
 		211B08D321843592004FB1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211B08D121843592004FB1FF /* LaunchScreen.storyboard */; };
 		211B08DB218435C1004FB1FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 211B08DA218435C1004FB1FF /* README.md */; };
 		211B08DD218436AF004FB1FF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 211B08DC218436AF004FB1FF /* .gitignore */; };
+		7E625720504E8AABECEAFE35 /* Pods_blue_bucks_diner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5A488561176315CC61BB33 /* Pods_blue_bucks_diner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		211B08D421843592004FB1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211B08DA218435C1004FB1FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		211B08DC218436AF004FB1FF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2F9C9C867C41288B92299137 /* Pods-blue-bucks-diner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blue-bucks-diner.release.xcconfig"; path = "Pods/Target Support Files/Pods-blue-bucks-diner/Pods-blue-bucks-diner.release.xcconfig"; sourceTree = "<group>"; };
+		DD5A488561176315CC61BB33 /* Pods_blue_bucks_diner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blue_bucks_diner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1B76E6FFFEBC1D4552EE3A /* Pods-blue-bucks-diner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blue-bucks-diner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blue-bucks-diner/Pods-blue-bucks-diner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E625720504E8AABECEAFE35 /* Pods_blue_bucks_diner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 				211B08DC218436AF004FB1FF /* .gitignore */,
 				211B08C721843591004FB1FF /* blue-bucks-diner */,
 				211B08C621843591004FB1FF /* Products */,
+				CA3CE072B995A519F1124754 /* Pods */,
+				2BCF232D8A42C1A9E2E2CD69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = "blue-bucks-diner";
 			sourceTree = "<group>";
 		};
+		2BCF232D8A42C1A9E2E2CD69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A488561176315CC61BB33 /* Pods_blue_bucks_diner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA3CE072B995A519F1124754 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF1B76E6FFFEBC1D4552EE3A /* Pods-blue-bucks-diner.debug.xcconfig */,
+				2F9C9C867C41288B92299137 /* Pods-blue-bucks-diner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211B08D721843592004FB1FF /* Build configuration list for PBXNativeTarget "blue-bucks-diner" */;
 			buildPhases = (
+				EA98BE560FF0B79649B5FDA1 /* [CP] Check Pods Manifest.lock */,
 				211B08C121843591004FB1FF /* Sources */,
 				211B08C221843591004FB1FF /* Frameworks */,
 				211B08C321843591004FB1FF /* Resources */,
+				D53F7F5D7B668F4E708CB54C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D53F7F5D7B668F4E708CB54C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-blue-bucks-diner/Pods-blue-bucks-diner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-blue-bucks-diner/Pods-blue-bucks-diner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA98BE560FF0B79649B5FDA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-blue-bucks-diner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		211B08C121843591004FB1FF /* Sources */ = {
@@ -288,6 +365,7 @@
 		};
 		211B08D821843592004FB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1B76E6FFFEBC1D4552EE3A /* Pods-blue-bucks-diner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +384,7 @@
 		};
 		211B08D921843592004FB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9C9C867C41288B92299137 /* Pods-blue-bucks-diner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

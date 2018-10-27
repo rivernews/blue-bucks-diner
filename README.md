@@ -2,6 +2,8 @@
 
 ### How to setup a new Xcode project
 
+[Refer to this SO post](https://stackoverflow.com/questions/20128619/why-doesnt-xcode-create-a-gitignore-file)
+
 - Create project in Xcode **without creating git repo**
 - Go to peojct root, `git init`
 - `curl https://www.gitignore.io/api/xcode,swift > .gitignore`
